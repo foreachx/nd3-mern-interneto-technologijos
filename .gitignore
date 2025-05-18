@@ -1,0 +1,51 @@
+# Global (abiejose pusėse)
+*.log
+*.log.*
+*.tmp
+*.swp
+*.bak
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+.env
+.env.*
+
+# Backend
+/backend/node_modules/
+/backend/dist/
+/backend/.env
+/backend/coverage/
+/backend/npm-debug.log*
+/backend/yarn-error.log*
+
+# Frontend
+/frontend/node_modules/
+/frontend/build/
+/frontend/dist/
+/frontend/.env
+/frontend/.eslintcache
+/frontend/.cache/
+/frontend/coverage/
+/frontend/npm-debug.log*
+/frontend/yarn-error.log*
+
+# Lock failai (jei nenaudoji konkretaus managerio)
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Docker
+docker-compose.override.yml
+.docker/
+
+# GitHub workflows/secrets
+.github/secrets.json
+
+# Public failai – laikini arba sugeneruoti
+/public/*.ico
+/public/*.svg
+/public/*.webp
+/public/*.png
+!public/logo-krakatuzo.png
+!public/favicon.ico
